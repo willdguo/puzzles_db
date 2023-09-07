@@ -1,0 +1,264 @@
+{
+  "puzzle_list": [
+    {
+      "title": "Testing Batteries",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "You are camping with your friends. You have a flashlight for any emergency and have brought 8 batteries along with you. Your brother calls to tell you that four of those batteries are already dead. Your flashlight requires two working batteries to run. What is the least number of pairs you will need to test to guarantee that you can get the flashlight on?",
+      "puzzle_hints": null,
+      "puzzle_answer": "7. Test all three possible pairs within two separate triads, then test the final pair. It is guaranteed that at least one of these tests will come up positive.",
+      "id": 0
+    },
+    {
+      "title": "Seeing Dust",
+      "puzzle_category": "Lateral Puzzles",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "If he saw the dust, he wouldn't have died.",
+      "puzzle_hint": "",
+      "puzzle_answer": "The man is a blind midget. Due to his height, he works as a circus freak, but when an enemy saws his wooden walking stick, he falsely assumes he's grown, causing him to commit suicide in fear of losing his source of income.",
+      "id": 1
+    },
+    {
+      "title": "Pelican Soup",
+      "puzzle_category": "Lateral Puzzles",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "A guy walks into a restaurant and asks for Pelican Soup. He then kills himself. Why did he kill himself?",
+      "puzzle_hint": "",
+      "puzzle_answer": "The guy, formerly a sailor, had shipwrecked years ago on an abandoned island where only he and one other coworker survived. His coworker secretly used the meat of the other sailors to sustain them both, but lied and said that it was \"pelican soup\". They were eventually rescued. When the man tasted actual pelican soup, however, he realized he had eaten his friends, and cannot live knowing this.",
+      "id": 2
+    },
+    {
+      "title": "A Cabin on a Mountain",
+      "puzzle_category": "Lateral Puzzles",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "A cabin, locked from the inside, is perched on the side of a mountain. It is forced open, and thirty people are found dead inside. They had plenty of food and water.\n",
+      "puzzle_hint": "",
+      "puzzle_answer": "It's an airplane cabin, crashed into the side of the mountain.",
+      "id": 3
+    },
+    {
+      "title": "Unfair Coins",
+      "puzzle_category": "Probability",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "You have an unfair two-sided coin. Find a way to simulate a fair coin.",
+      "puzzle_hint": "",
+      "puzzle_answer": "Note that the sequences HT and TH have equal probability of occuring. Then, assign either to H or T respectively, and flip the coin twice. If the coin comes up either HT or TH, you are done. If the coin comes up HH or TT, repeat the process.",
+      "id": 4
+    },
+    {
+      "title": "Unfair Coins 2",
+      "puzzle_category": "Probability",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "You have a fair coin. Find a way to simulate an unfair coin with a given probability of heads p/q for some positive integers p < q.",
+      "puzzle_hint": "",
+      "puzzle_answer": "For any n such that 2^n > q (ideally minimal such n), flip the coin n times. Consider the binary sequence of heads and tails where heads represent a digit 1 and tails 0. If the binary sequence represents an integer less than p, consider it a \"heads\" and tails if the sequence is greater than or equal to p but less than q. Otherwise, repeat the process. This works because each sequence (from 000...000 to 1...1 with n ones) has an equal probability of occurring. Hence, given one of the first q sequences is witnessed, there is a p/q probability that it is one of the first p.",
+      "id": 5
+    },
+    {
+      "title": "The Sultans and the Ward",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "50 sultans are locked up in a prison. The ward gives them an opportunity to escape with a game involving their vase, which is known to be facing down at first. The sultans are allowed to briefly discuss a strategy before being isolated in their respective cells. Then, every few minutes, the ward will discretely bring exactly one sultan up to the main room where the vase is. The sultan can choose to either flip the vase or do nothing, and will then be sent back to their individual cell. The ward can bring up sultans in any order, meaning some sultans might not be picked for extended periods of time while others might be picked consecutively on end. If, after some time - perhaps even an infinite amount of time - one of the sultans called up can accurately proclaim that all sultans have visited the main room at least once, they will all be released. If this proclamation is false, however, the sultans will all be executed. What is a winning strategy for the sultans?",
+      "puzzle_hint": "",
+      "puzzle_answer": "The sultans should dedicate one sultan to be the leader. The leader should be given the privilege of flipping the vase only when it is facing down, while all other sultans will flip the vase only when it is facing up the first time they ever see it facing up. Given this, at the start, no sultan will touch the vase until the leader sees it, at which point they flip it facing up. The next new sultan to see this vase then flips it down. Since all other sultans after this see it facing down, they cannot flip it back up except the leader, who will keep note of this and flip it back up. Now, when a new sultan that isn't the first one sees the vase flipped up, they will flip the vase back down. If the leader sees the vase while it is up, they cannot flip it down. Eventually, the leader will see the vase in a down state, which they will take note of. Once the leader has seen the vase in a down position 50 times (including their first visit), they will know that every sultan has seen the vase.",
+      "id": 6
+    },
+    {
+      "title": "Tiling a 15x15",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "What is the minimum number of 3x3s needed to tile a 15x15 square grid with only 2x2s and 3x3s?",
+      "puzzle_hint": "",
+      "puzzle_answer": "9. This can be done by covering two entire edges of the 15x15 to leave a 12x12 that can be tesselated by 2x2s. Note that any number of 3x3s not 1 mod 4 will not leave an area divisible by 4 uncovered, making it impossible to cover with only 2x2s. This leaves 1 and 5 as the final values to check. However, assuming a configuration exists for either of these values, there are two key observations that can be made once the 3x3s are placed. First, any given row/column must have an even number of uncovered squares for it to be coverable by 2x2s. Next, for rows/columns intersecting with a 3x3, it must be split into even values (e.g. 4 and 8, 2 and 10) to be coverable by 2x2s. One 3x3 isn't enough to meet the first criterion, as there will always be 2 rows and 2 columns that have 15 uncovered squares. Five 3x3s can cover all rows/columns, but in doing so there will always be exactly 2 rows and 2 columns split into 3 and 9, which violates the second condition. Because of this, 9 is the minimal number of 3x3s. ",
+      "id": 7
+    },
+    {
+      "title": "A Lightbulb in the Basement",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "There is a lightbulb in the basement which is controlled by exactly one of four light switches upstairs (the other three light switches don't do anything). You cannot see the lightbulb from upstairs and don't want to make many trips downstairs. What is the minimum number of trips you need to take to determine which light switch controls the lightbulb?",
+      "puzzle_hint": "",
+      "puzzle_answer": "1. You may have heard of the variation with 3 light bulbs, which uses the thermal energy of the lightbulb as an additional bit of information. This problem uses similar logic. We have two binary variables: 1) whether the lightbulb is on or off, and 2) whether the lightbulb is hot or cold. With this as motivation, consider a procedure where we can trace each state we witness in our single visit in the basement (on + hot, on + cold, off + hot, off + cold) to exactly one of the switches upstairs. One such procedure is flipping light switches 1 and 2 on, leaving them to sit for a while, then turning 2 off and 3 on before going to check on the lightbulb. If the light switch is on and hot, it must be 1, which is the only light switch that has been on for a while and is still on. Conversely, if it is hot and off, it must be 2, and if it is cold and on it must be 3. Then, if it is cold and off it must be 4. ",
+      "id": 8
+    },
+    {
+      "title": "The King's Assistant",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "You, the king's assistant, have been duped! Upon collecting taxes from a village of 14 households, where each person owes 1 gold coin, you find that 7 of the coins are fake. Indeed, upon overhearing a conversation at the local pub, you learn the exact 7 households that are frauds. You also overhear that they all got the coins from the same producer. This has happened before at different villages, and you and the rest of the kingdom know that the coins from this producer have the exact same weight - slightly lighter than standard gold coins. Fortunately, each coin has the family name on it, so you quickly identify the fake coins. Unfortunately, the bureaucracy (which inconveniently happens to be controlled by the fake coin producer) dictates that to prove to the king that there are 7 underweight coins, you will only be given the chance to weigh one or more coins against each other at most 3 times on a weighing scale. The scale doesn't show the exact weight of the coins - only which side is heavier. Now, you are sitting in front of a court with the basket of 14 coins, the king eagerly watching you. What 3 weighs will you do to reveal the 7 fakes?",
+      "puzzle_hint": "",
+      "puzzle_answer": "To start, weigh one real vs one fake coin. The fake will be lighter, showing to everyone that it is indeed fake. Next, weigh these two coins against two other fake coins. Since everyone knows the heavier side is one real and one fake coin, the lighter side must be two fakes. Finally, weigh all four of these coins against the final four fakes. Again, since everyone knows the heavier side is one real and three fakes, the four coins on the other side of the scale will be revealed as fakes.",
+      "id": 9
+    },
+    {
+      "title": "Hourglasses",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "You have two hourglasses that measure 4 minutes and 7 minutes, respectively. You want to measure 9 minutes, where 9 minutes begins upon flipping either of the hourglasses. How can you measure 9 minutes?",
+      "puzzle_hint": "",
+      "puzzle_answer": "Flip both at once. When the 4 is finished, flip it over immediately. When the 7 finishes, flip it over immediately as well. At this time, there should be 1 minute remaining in the 4. Once the 4 runs out for the second time, there should now be 1 minute of sand in the bottom of the 7, so flip the 7 over to run the 1 minute back down. Ultimately, this gives you 4 + 4 + 1 = 9 minutes.",
+      "id": 10
+    },
+    {
+      "title": "Coins on a Table",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "100 identical coins of radius 1 are placed on a rectangular table with overlap such that they cover the entire table. Show that the table can be covered by 400 coins of radius 1/2.",
+      "puzzle_hint": "",
+      "puzzle_answer": "Consider a homothety of radius 1/2 about one of the corners of the table. Evidently, the post-image of this homothety will be a quarter of the table covered by 100 coins of radius 1/2. Copying this corner 4 times yields full coverage of the entire table with 400 coins of radius 1/2. ",
+      "id": 11
+    },
+    {
+      "title": "Coins on a Table 2",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "100 identical coins of radius 1 are placed on a rectangular table without overlap such that there is no room for another coin to be placed without overlapping with an existing coin. Prove that the table can be covered by 400 coins of radius 1. ",
+      "puzzle_hint": "",
+      "puzzle_answer": "A key component of this puzzle is to quantify what it means for there to be \"no room for another coin\". Ultimately, this condition can be quantified by the following observation: there is no point on the table that is greater than a distance of 1 from the edge of any coin around it, or a distance of 2 from any coin center. Now, consider a homothety of radius 1/2 about one of the corners of the table. Note that within the quarter rectangle created by this dilation, there is no point that is a distance greater than 1 away from the newly mapped coin centers. As such, all points within this quarter will be covered by coins of radius 1 placed on the images of the coin centers. Copying this quarter for all 4 quarters of the rectangle yields a rectangle fully covered by 400 coins of radius 1. ",
+      "id": 12
+    },
+    {
+      "title": "Chessboard Inversions",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "You are given an 8x8 chessboard with the 4 corner squares painted black and all other squares painted white. You are allowed to select any row/column and invert the color of each cell within that row/column. Can you get the board to be 4 black squares in the center (and all other squares white), and if so, how?",
+      "puzzle_hint": "",
+      "puzzle_answer": "No, you can't. In fact, consider the 2x2 in each corner. Note that any operation will either flip the color of 2 identically colored squares or 2 different colored squares. This means the difference between the numbers of each color either increases/decreases by 2 or doesn't change; in either case, it doesn't change its parity (e.g. the difference b/t the number of whites & blacks doesn't change mod 2). Since these 2x2s each start with an absolute difference of 1, it is impossible for these squares to be all white as desired. ",
+      "id": 13
+    },
+    {
+      "title": "The Wrong FLT",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "Prove that if 2k^3 + 6k is a perfect cube, then k is a perfect cube.",
+      "puzzle_hint": "",
+      "puzzle_answer": "The equation simplifies to (k - 1)^3 + (k + 1)^3 = n^3. By Fermat's Last Theorem, this has no solutions for |k - 1|, |k + 1|, |n| > 0. By inspection, k = 0, k = 1, and k = -1 all work, and each of which are perfect cubes.",
+      "id": 14
+    },
+    {
+      "title": "Heptominoes",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "There are 108 distinct heptominoes after accounting for rotations & reflections: dominoes with 7 squares (or, if it makes it easier, \"tetrominoes\" from Tetris but with 7 squares instead of 4). Prove that this set of heptominoes cannot be used to tesselate a 7x108 rectangle.",
+      "puzzle_hint": "",
+      "puzzle_answer": "The most trivial proof is that there exists a heptomino with a hole in the center - that is, a 3x3 square with the centerpiece and one corner missing. The hole in the center cannot be filled by any other heptomino.",
+      "id": 15
+    },
+    {
+      "title": "Lost in the Woods",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "Adam is stuck in an unknown location at an unknown orientation within a circular forest of radius 1 mile. He has enough stamina to walk exactly 1.99 miles, at which point he will collapse from exhaustion and be unable to move. The forest is in the middle of a large clearing where he will be able to get help. However, the trees are extremely dense, meaning Adam won't be able to see outside the forest even if he is mere feet from its edge. Can Adam guarantee his escape, and if so, how? ",
+      "puzzle_hint": "",
+      "puzzle_answer": "Adam cannot guarantee his own escape. Assuming Adam has some path he seeks to follow, consider the first 0.995 miles (halfway through his intended trek). Since Adam's initial orientation is arbitrary, we can put him in a position such that after his first 0.995 miles, he will happen to be the center of the circle. Then, no matter what subsequent path he chooses, he cannot reach the edge of a circle with radius 1 mile in only 0.995 miles.  ",
+      "id": 16
+    },
+    {
+      "title": "Lost in the Woods 2",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "Alice is stuck in an unknown position/orientation within a rectangular forest of length 100 miles and width 1 mile. She has enough stamina to walk exactly 2.5 miles, at which point she will collapse from exhaustion and be unable to move. If she can get outside the forest, she will be rescued, but the trees are extremely dense, so Alice won't be able to see outside the forest even if she is mere feet from its edge. Can she guarantee her escape, and if so, how?",
+      "puzzle_hint": "",
+      "puzzle_answer": "Yes, she can. One such strategy involves walking in one direction for a distance d, turning a certain angle, then walking until exhaustion. Consider forming a triangle with these two side lengths and a line connecting the starting/ending points. Now, consider trying to fit a line segment with length 1 inside this triangle: no matter its orientation, it should be able to fit. The bottleneck for such a triangle is its altitudes, each of which must be greater than or equal to 1. A minimal such triangle is an equilateral triangle with altitude 1 and thus side length 2/sqrt(3). Two of these side lengths have length 4/sqrt(3) ~ 2.31, which is less than 2.4. Hence, Alice's winning strategy is to walk 2/sqrt(3) miles in one direction in a straight line, turn 60 degrees, and walk 2/sqrt(3) miles in a straight line or until she reaches the edge of the forest. As it turns out, a trajectory of 2 straight lines isn't optimal; the best path and minimum walking distance are left as an exercise for the reader.",
+      "id": 17
+    },
+    {
+      "title": "Defective Ball",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "You have 12 identical balls, all of which have the same weight except one that is known to be heavier or lighter than the rest. You have a weighing scale that only shows if one tray is heavier/lighter/balanced. In 3 weighs, can you determine which ball is the defective one, and whether it is heavier or lighter?",
+      "puzzle_hint": "",
+      "puzzle_answer": "Label the balls 1 through 12. At the start, you have 24 possibilities: one of the balls 1 through 12 could be heavier or lighter than the rest. Our goal is to bring this down to 1 possibility in 3 weighs. We can break this problem down by noting that if we have 4 balls labeled a, b, c, and d (8 possibilities - either can be heavier or lighter), we can weigh a+b vs c + one of the other 8 balls we know to be safe. If the scale is equal, we'll know d is the bad one and can use one weigh to see if it's heavier or lighter than the rest. If the scale favors a+b, we'll know either a is heavier, b is heavier, or c is lighter. Weighing a against b will tell us if a is heavier, b is heavier, or if a=b so c is lighter. Hence, if we have 4 balls left, we only need 2 weighs to find the defective ball. Now, weigh balls 1-4 vs 5-8. If the scale is equal, we know the defective ball is in 9-12, and we do 2 more weighs as described above. If balls 1-4 come back heavier, we again have 8 possibilities to evaluate (one of 1-4 is heavier or one of 5-8 is lighter) in 2 weighs. Here, we can weigh 1, 2, and 5 vs 3, 6, and any one of 9-12. If 1+2+5 is heavier, then either 1 is heavy, 2 is heavy, or 6 is light; weighing 1 vs 2 will then get us the answer. If 3+6+9 is heavier, then either 5 is lighter, 3 is heavier, or 6 is lighter; weighing 5 vs 6 will get us the answer. If they are equal, then either 4 is heavier, 7 is lighter, or 8 is lighter. Weighing 7 against 8 will get us the answer. ",
+      "id": 18
+    },
+    {
+      "title": "Ctrl+C Ctrl+V",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "You want to cut a circle of radius 1cm at the center of a square with side length 100cm. However, you accidentally cut the hole off center. What's the minimum length you need to cut to divide the remaining square into two pieces that can be rearranged such that the hole moves to the center?",
+      "puzzle_hint": "",
+      "puzzle_answer": "2pi cm. You can just cut another hole at the center, moving the material you cut to cover up the off-center hole. ",
+      "id": 19
+    },
+    {
+      "title": "A Simple Function",
+      "puzzle_category": "Coding",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "Code a function that takes in a character as a parameter. The function will only ever be tested on two input values: \"5\" with an expected return value of \"4\", and \"4\" with an expected return value of \"5\" (variable type of the output is irrelevant). You are not allowed to use conditionals (including \"while\" and \"if\" statements).",
+      "puzzle_hint": "",
+      "puzzle_answer": "Plenty of ways to do this one. Here's the easiest method:\npseudocode get_answer (char x) -> int: \n    return (9 - Integer.parseInt(x))\n\nAnother solution involves flipping the units digit of the input in binary.",
+      "id": 20
+    },
+    {
+      "title": "Maximize P(red)",
+      "puzzle_category": "Brain Teaser",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "You have a 52-card deck. You can either guess that the top card is red or decide to look at and discard the top card. If you discard all cards, you lose. What is the optimal strat and highest probability of guessing red correctly?\n",
+      "puzzle_hint": "",
+      "puzzle_answer": "The best odds are 1/2. Notice that at any given point, the probability that the top card is red is equal to the probability that the last card is red, as all cards are identical. Hence, all strategies are equivalent in probability to waiting until the last card and then guessing red, which has a 1/2 probability of success.",
+      "id": 21
+    },
+    {
+      "title": "Drunk Passenger",
+      "puzzle_category": "Probability",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "100 passengers are lined up to board a train, in order from 1 to 100 such that the nth passenger in line has a ticket for the nth seat. One by one, the passengers will be let into the train. The first passenger happens to be drunk, and will randomly pick a seat to sit in. Each subsequent passenger will go to their seat and sit in it, assuming it isn't already taken. If it has been taken, they'll randomly pick an unoccupied seat to sit in. You are the 100th passenger. What is the probability you end up sitting in your seat?",
+      "puzzle_hint": "",
+      "puzzle_answer": "This can be solved with induction, a recursive argument, and/or probably a lot of other different ways. One of the least computational proofs is to notice that by the 99th passenger, one seat will remain. This seat must be either the 100th seat or the 1st seat; if either of these seats are taken at any time, all other passengers will be able to take their own seat. Then, any previous passenger that ends up having to pick a random seat has two possible options: 1) pick seat 100 or 1, thereby sealing your fate, or 2) deferring the decision to a different passenger down the line. However, for any given passenger that ends up sealing your fate, randomly picking seat 100 and seat 1 are indistinguishable and have identical probabilities. Thus, the probability that seat 100 is taken by the time you get to your seat is equal to the probability that seat 1 is taken, implying the desired probability is 1/2. ",
+      "id": 22
+    },
+    {
+      "title": "The Basement",
+      "puzzle_category": "Lateral Puzzles",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "Suzie is told by her parents to never open the basement door. ",
+      "puzzle_hint": "",
+      "puzzle_answer": "Suzie lives in the basement and isn't let out by her parents.",
+      "id": 23
+    },
+    {
+      "title": "Gunpoint",
+      "puzzle_category": "Lateral Puzzles",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "A man walks into a bar and asks for a drink. The bartender points a gun at the man. The man says thank you and leaves.",
+      "puzzle_hint": "",
+      "puzzle_answer": "The man had a case of hiccups and needed a drink to resolve it. The bartender pulled out a gun to scare the man, which resolved his hiccups. ",
+      "id": 24
+    },
+    {
+      "title": "Give and Take",
+      "puzzle_category": "Probability",
+      "puzzle_difficulty": "hard",
+      "puzzle_statement": "You are playing a one-player game. At the start of the game, you have two empty opaque boxes in front of you. Each turn, you can either \"give\", adding $1 to one of the boxes chosen randomly, or \"take\", in which you empty one of the boxes and obtain its contents. Assuming optimal play, what is your expected payout after 100 turns?",
+      "puzzle_hint": "",
+      "puzzle_answer": "Let k be the number of times you take (and hence 100 - k be the total number of gives and hence dollars available). Intuitively, it is most optimal to give 100 - k times, then take k times as opposed to interspersing your takes within the gives. Then, each box has (100 - k)/2 by the time you begin taking. By linearity of expectation, we will assume this is true for the rest of the proof.\nThe first take has expected payout (100 - k)/2. After this take, there is only (100 - k)/2 concentrated entirely in one of the boxes. So, the expected payout of the second take is (100 - k)/4. The expected payout of the third take is (100 - k)/2 * P(get (100 - k)/2 on 3rd take) = (100 - k)/2 * P(get (100 - k)/2 | failed first time, succeed 2nd time) = (100 - k)/2 * 1/4 = (100 - k)/8. Generalizing this procedure, the expected payout after k takes is (100 - k)/2^k. Then, for k takes, the total payout is (100 - k)/2 + (100 - k)/2^2 + ... + (100 - k)/2^k = (100 - k)(1 - 1/2^k). From here, one may test different values of k to find the maximum total payout (e.g. through bisection search between 1 and 10 or so). Eventually, the answer will be found to be k = 6, which yields a payout of 94 * (63/64) = 92.53125.",
+      "id": 25
+    },
+    {
+      "title": "New Toys",
+      "puzzle_category": "Probability",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "Donald's has 5 distinct types of toys that they sell as a part of their Joyful Meals. Each Joyful Meal has exactly 1 toy that is drawn randomly from the different toys mutually independent from other Joyful Meals. You buy 7 Joyful Meals; how many of the distinct toy types do you expect to get?",
+      "puzzle_hint": "",
+      "puzzle_answer": "Each toy type has a 1 - (4/5)^7 probability of being included at least once among your 7 Joyful Meals. Then, the expected number of toy types you'll get is 5 * (1 - (4/5)^7) = 61741/15625 ~ 3.95.",
+      "id": 26
+    },
+    {
+      "title": "Median of Binary Tree",
+      "puzzle_category": "Coding",
+      "puzzle_difficulty": "easy",
+      "puzzle_statement": "You are given an unknown full binary tree (each node has either 0 or 2 children) T with size n > 1. Let f be a function that takes in a node u and outputs the median size of the subtrees from u if T were rooted at u. For example, in the tree with root node (1) and children (2) and (3), f((1)) = 1 and f((2)) = 2 (there would only be 1 subtree from (2) with size 2). A random set S (v_1, v_2, ..., v_m) consisting of m distinct nodes in T (n/2 < m <= n) are selected. You are given the list {f(v_1), f(v_2), ..., f(v_m)}. Return a boolean that is true when the root of T is included within S.",
+      "puzzle_hint": "",
+      "puzzle_answer": "Observe that f((x)) = n - 1 for any node (x) that is a leaf node, and f((r)) = (n - 1)/2. Any full binary tree is at least half leaf nodes, so there will always be at least 1 leaf node in S given n/2 < m. Evidently, n - 1 is the maximum possible output of f. Then, given output list arr, as long as max(arr)/2 is in arr, we should return true and false otherwise. ",
+      "id": 27
+    }
+  ],
+  "rant_list": [
+    {
+      "title": "Urinals and Game Design",
+      "content": "today i went to the bathroom in lifetime fitness\nupon using the urinal i forgot to press the button to flush\nhowever by the time i turned around, it automatically flushed anyways\nthis confused me because i didn’t even know it automatically flushed, and from now on i def won’t press the button\nwhen the button is present, we think that is the only option and hence that it is good to press the flush button\nwhen the button is removed, it actually yields better results (e.g less germ spread) than when the button is there\nbroadly speaking, sometimes more is worse, and customizability sucks.\nthis reminded me of when adam was shitting on my speedmath game (https://speedmath-woad.vercel.app/) because the parameters were customizable\ncuz the marginal benefit of having the option to change the lower/upper bounds is outweighed by the standardization of having invariant parameters (+ risk of users adapting to their own shittier parameters)\nwould've saved me a bunch of time too - bad to add features for features sake",
+      "date": "2023-08-22T01:25:58.000Z",
+      "id": 1
+    }
+  ]
+}
