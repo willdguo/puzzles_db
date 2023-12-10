@@ -1,6 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap"
 import Puzzles from "./components/Puzzles"
-import Rants from "./components/Rants"
 import { Routes, Route, Navigate } from "react-router-dom"
 
 /*
