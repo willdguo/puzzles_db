@@ -33,7 +33,7 @@ function App() {
         <Route path = "/" element = {<Navigate replace to = "/home"/>} />
         <Route path = "/home" element = {"Hello World *insert description*"}/>
         <Route path = "/puzzles" element = {<Puzzles />}/>
-        <Route path = "/rants" element = {<Rants />} />
+        {/* <Route path = "/rants" element = {<Rants />} /> */}
       </Routes>
 
     </div>
@@ -50,7 +50,7 @@ const NavBar = () => {
         <Nav>
           <Nav.Link href = "/home"> Home </Nav.Link>
           <Nav.Link href = "/puzzles"> Puzzles </Nav.Link>
-          <Nav.Link href = "/rants"> Rants </Nav.Link> 
+          {/* <Nav.Link href = "/rants"> Rants </Nav.Link>  */}
         </Nav>
       </Container>
     </Navbar>

@@ -251,6 +251,15 @@
       "puzzle_hint": "",
       "puzzle_answer": "Observe that f((x)) = n - 1 for any node (x) that is a leaf node, and f((r)) = (n - 1)/2. Any full binary tree is at least half leaf nodes, so there will always be at least 1 leaf node in S given n/2 < m. Evidently, n - 1 is the maximum possible output of f. Then, given output list arr, as long as max(arr)/2 is in arr, we should return true and false otherwise. ",
       "id": 27
+    },
+    {
+      "title": "Monkeys and Typewriters",
+      "puzzle_category": "Probability",
+      "puzzle_difficulty": "medium",
+      "puzzle_statement": "You have two monkeys, both typing letters uniformly at random on identical typewriters. One monkey will stop typing when it types the letters \"ABRACADABRA\" consecutively, and the other will stop when it types \"ABRACADABRX\". Both monkeys type at the same speed. Which monkey do you expect to stop typing first?",
+      "puzzle_hint": "",
+      "puzzle_answer": "It is expected that \"ABRACADABRX\" will come before \"ABRACADABRA\". The intuition is that every time we reach the state \"ABRACADABR\", there is an equal chance (1/26) for either monkey to get the final letter they need. The trick is that if the monkey that wants \"...X\" types an \"A\" at this stage, they have functionally repeated back to the \"ABRA\" state, functionally giving them a head start on the next sequence of letters. The exact difference between these two monkeys should be 26^4 + 26 letters for this reason.\n\nFull explanation: https://martingalemeasure.wordpress.com/2014/02/02/monkey-typing-abracadabra-14/",
+      "id": 28
     }
   ],
   "rant_list": [
